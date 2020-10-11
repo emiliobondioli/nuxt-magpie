@@ -6,9 +6,13 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
-> Build module for [Nuxt.js](https://github.com/nuxt/nuxt.js) to download remote images and include them as local files in the generated build when performing [full static generation](https://nuxtjs.org/blog/going-full-static/)
+> Build module for [Nuxt.js](https://github.com/nuxt/nuxt.js) to download remote images and include them as local files in the generated build when performing [full static generation](https://nuxtjs.org/blog/going-full-static/).
 
 [📖 **Release Notes**](./CHANGELOG.md)
+
+## Dependencies
+
+Magpie requires `nuxt` version >= `2.14.0` to work.
 
 ## Setup
 
