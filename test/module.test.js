@@ -13,32 +13,32 @@ describe('module', () => {
     await nuxt.close()
   })
 
-  test('images-dir-created', () => {
+  test('images dir created', () => {
     const path = join(generator.distPath, '_images')
     expect(fs.existsSync(path)).toBeTruthy()
   })
 
-  test('page-replaced', () => {
+  test('route html replaced', () => {
     const path = join(generator.distPath, 'index.html')
     const html = fs.readFileSync(path, 'utf8')
     expect(html).toContain('/_images/logos-nuxt-icon.png')
   })
 
-  test('payload-replaced', () => {
+  test('route payload replaced', () => {
     const path = join(generator.staticAssetsDir, 'payload.js')
     if (!fs.existsSync(path)) { return Promise.resolve(true) }
     const payload = fs.readFileSync(path, 'utf8')
     expect(payload).toContain('\\u002F_images\\u002Flogos-nuxt-icon.png')
   })
 
-  test('state-replaced', () => {
+  test('route state replaced', () => {
     const path = join(generator.staticAssetsDir, 'state.js')
     if (!fs.existsSync(path)) { return Promise.resolve(true) }
     const state = fs.readFileSync(path, 'utf8')
     expect(state).toContain('\u002F_images\u002Flogos-nuxt-icon.png')
   })
 
-  test('image-saved', () => {
+  test('remote image saved', () => {
     const path = join(generator.distPath, '_images', 'logos-nuxt-icon.png')
     expect(fs.existsSync(path)).toBeTruthy()
   })
