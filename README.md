@@ -1,4 +1,4 @@
-# magpie
+# nuxt-magpie
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -12,22 +12,22 @@
 
 ## Setup
 
-1. Add `magpie` dependency to your project
+1. Add `nuxt-magpie` dependency to your project
 
 ```bash
-yarn add magpie # or npm install magpie
+yarn add nuxt-magpie # or npm install nuxt-magpie
 ```
 
-2. Add `magpie` to the `modules` section of `nuxt.config.js`
+2. Add `nuxt-magpie` to the `modules` section of `nuxt.config.js`
 
 ```js
 {
   modules: [
     // Simple usage
-    'magpie',
+    'nuxt-magpie',
 
     // With options
-    ['magpie', { /* module options */ }]
+    ['nuxt-magpie', { /* module options */ }]
   ]
 }
 ```
@@ -45,11 +45,11 @@ yarn add magpie # or npm install magpie
 Copyright (c) Emilio Bondioli
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/magpie/latest.svg
-[npm-version-href]: https://npmjs.com/package/magpie
+[npm-version-src]: https://img.shields.io/npm/v/nuxt-magpie/latest.svg
+[npm-version-href]: https://npmjs.com/package/nuxt-magpie
 
-[npm-downloads-src]: https://img.shields.io/npm/dt/magpie.svg
-[npm-downloads-href]: https://npmjs.com/package/magpie
+[npm-downloads-src]: https://img.shields.io/npm/dt/nuxt-magpie.svg
+[npm-downloads-href]: https://npmjs.com/package/nuxt-magpie
 
 [github-actions-ci-src]: https://github.com/emiliobondioli/workflows/ci/badge.svg
 [github-actions-ci-href]: https://github.com/emiliobondioli/actions?query=workflow%3Aci
@@ -57,5 +57,5 @@ Copyright (c) Emilio Bondioli
 [codecov-src]: https://img.shields.io/codecov/c/github/emiliobondioli.svg
 [codecov-href]: https://codecov.io/gh/emiliobondioli
 
-[license-src]: https://img.shields.io/npm/l/magpie.svg
-[license-href]: https://npmjs.com/package/magpie
+[license-src]: https://img.shields.io/npm/l/nuxt-magpie.svg
+[license-href]: https://npmjs.com/package/nuxt-magpie
