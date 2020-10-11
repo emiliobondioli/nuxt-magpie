@@ -12,13 +12,14 @@
 
 ✨🐦 Shiny!
 
+Magpie aims take Nuxt's [full static generation](https://nuxtjs.org/blog/going-full-static/) a step further, to create a standalone build with no API calls and no remote image assets.
+
 ## Features
 
-Magpie aims take Nuxt's [full static generation](https://nuxtjs.org/blog/going-full-static/) a step further, to allow the creation of a completely standalone build with no API calls and no remote image assets.
-- Download local copies of all remote images to your `/dist` folder
+- Downloads local copies of all remote images to your `/dist` folder
 - For each generated route, replaces all image urls in the page's html and payload/state to use the local copies
-- Use it with a locally hosted CMS, to create a production ready build to be deployed on static hosts (e.g. Netlify)
-- Requires `nuxt` version >= `2.14.0` to work
+- Use it with a locally hosted CMS to create a build ready to be deployed on static hosts (e.g. Netlify)
+- Requires `nuxt` version >= `2.14.0`
 
 ## Setup
 
@@ -38,10 +39,10 @@ yarn add nuxt-magpie # or npm install nuxt-magpie
 
     // With options
     ['nuxt-magpie', {
-      path: '/_images', // dir where downloaded images will be stored
+      path: '/_images', // dir inside /dist where downloaded images will be saved
       extensions: ['jpg', 'jpeg', 'gif', 'png', 'webp'],
       baseUrl: '', // only download images from a certain url (e.g. your backend url)
-      verbose: false, // shows additional log info
+      verbose: false, // show additional log info
       concurrency: 10 // max concurrent image downloads
     }]
   ]
