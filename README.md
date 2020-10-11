@@ -12,7 +12,7 @@
 
 ✨🐦 Shiny!
 
-Magpie aims take Nuxt's [full static generation](https://nuxtjs.org/blog/going-full-static/) a step further, to create a standalone build with no API calls and no remote image assets.
+Magpie aims to take Nuxt's [full static generation](https://nuxtjs.org/blog/going-full-static/) a step further, to create a standalone build with no API calls and no remote image assets.
 
 ## Features
 
@@ -79,11 +79,11 @@ Copyright (c) Emilio Bondioli
 [npm-downloads-src]: https://img.shields.io/npm/dt/nuxt-magpie.svg
 [npm-downloads-href]: https://npmjs.com/package/nuxt-magpie
 
-[github-actions-ci-src]: https://github.com/emiliobondioli/workflows/ci/badge.svg
-[github-actions-ci-href]: https://github.com/emiliobondioli/actions?query=workflow%3Aci
+[github-actions-ci-src]: https://github.com/emiliobondioli/nuxt-magpie/workflows/ci/badge.svg
+[github-actions-ci-href]: https://github.com/emiliobondioli/nuxt-magpie/actions?query=workflow%3Aci
 
-[codecov-src]: https://img.shields.io/codecov/c/github/emiliobondioli.svg
-[codecov-href]: https://codecov.io/gh/emiliobondioli
+[codecov-src]: https://img.shields.io/codecov/c/github/emiliobondioli/nuxt-magpie.svg
+[codecov-href]: https://codecov.io/gh/emiliobondioli/nuxt-magpie
 
 [license-src]: https://img.shields.io/npm/l/nuxt-magpie.svg
 [license-href]: https://npmjs.com/package/nuxt-magpie
