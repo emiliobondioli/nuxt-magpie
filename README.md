@@ -10,9 +10,15 @@
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
-## Dependencies
+✨🐦 Shiny!
 
-Magpie requires `nuxt` version >= `2.14.0` to work.
+## Features
+
+Magpie aims take Nuxt's [full static generation](https://nuxtjs.org/blog/going-full-static/) a step further, to allow the creation of a completely standalone build with no API calls and no remote image assets.
+- Download local copies of all remote images to your `/dist` folder
+- For each generated route, replaces all image urls in the page's html and payload/state to use the local copies
+- Use it with a locally hosted CMS, to create a production ready build to be deployed on static hosts (e.g. Netlify)
+- Requires `nuxt` version >= `2.14.0` to work
 
 ## Setup
 
