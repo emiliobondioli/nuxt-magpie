@@ -34,8 +34,7 @@
     "husky": "latest",
     "jest": "latest",
     "nuxt-edge": "latest",
-    "standard-version": "latest",
-    "tiny-async-pool": "^1.1.0"
+    "standard-version": "latest"
   },
   "publishConfig": {
     "access": "public"
