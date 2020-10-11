@@ -6,7 +6,7 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
-> During full static generation, download all remote images and add them to the dist folder, replacing file names in html and static payloads
+> Build module for [Nuxt.js](https://github.com/nuxt/nuxt.js) to download remote images and include them as local files in the generated build when performing [full static generation](https://nuxtjs.org/blog/going-full-static/)
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
@@ -18,19 +18,36 @@
 yarn add nuxt-magpie # or npm install nuxt-magpie
 ```
 
-2. Add `nuxt-magpie` to the `modules` section of `nuxt.config.js`
+2. Add `nuxt-magpie` to the `buildModules` section of `nuxt.config.js`
 
 ```js
 {
-  modules: [
+  buildModules: [
     // Simple usage
     'nuxt-magpie',
 
     // With options
-    ['nuxt-magpie', { /* module options */ }]
+    ['nuxt-magpie', {
+      path: '/_images', // dir where downloaded images will be stored
+      extensions: ['jpg', 'jpeg', 'gif', 'png', 'webp'],
+      baseUrl: '', // only download images from a certain url (e.g. your backend url)
+      verbose: false, // shows additional log info
+      concurrency: 10 // max concurrent image downloads
+    }]
   ]
 }
 ```
+
+3. Enable `full static` generation in `nuxt.config.js`:
+
+```js
+{
+  ssr: true,
+  target: 'static'
+}
+```
+
+4. Run `nuxt generate`
 
 ## Development
 
