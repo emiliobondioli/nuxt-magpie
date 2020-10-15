@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/emiliobondioli/nuxt-magpie/compare/v0.0.10...v0.0.11) (2020-10-15)
+
+
+### Features
+
+* add alias option when looking for paths without base url ([3558f2e](https://github.com/emiliobondioli/nuxt-magpie/commit/3558f2eb2184121c5599f0d039f57c0be4c1455a))
+* add option to keep existing path when saving images ([f9f6fdb](https://github.com/emiliobondioli/nuxt-magpie/commit/f9f6fdb52a879e8a484c3a012319f4e8a1a5400f))
+
 ### [0.0.10](https://github.com/emiliobondioli/nuxt-magpie/compare/v0.0.9...v0.0.10) (2020-10-15)
 
 
