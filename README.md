@@ -35,18 +35,16 @@ yarn add nuxt-magpie # or npm install nuxt-magpie
 {
   buildModules: [
     // Simple usage
-    'nuxt-magpie',
+    "nuxt-magpie",
 
     // With options
-    ['nuxt-magpie', {
-      path: '/_images', // dir inside /dist where downloaded images will be saved
-      extensions: ['jpg', 'jpeg', 'gif', 'png', 'webp'],
-      baseUrl: '', // only download images from a certain url (e.g. your backend url)
-      verbose: false, // show additional log info
-      concurrency: 10 // max concurrent image downloads,
-      keepFolderStructure: false // re-creates original image paths when saving local copies
-    }]
-  ]
+    [
+      "nuxt-magpie",
+      {
+        /* module options */
+      }
+    ]
+  ];
 }
 ```
 
@@ -61,6 +59,37 @@ yarn add nuxt-magpie # or npm install nuxt-magpie
 
 4. Run `nuxt generate`
 
+## Options
+
+All options and their default values: 
+```js
+{
+  path: '/_images', // dir inside /dist where downloaded images will be saved
+  extensions: ['jpg', 'jpeg', 'gif', 'png', 'webp'],
+  baseUrl: '', // only download images from a certain url (e.g. your backend url)
+  verbose: false, // show additional log info
+  concurrency: 10 // max concurrent image downloads
+  keepFolderStructure: false // re-creates original image paths when saving local copies
+  alias: {} // see options section for details
+}
+```
+
+### Alias
+
+You can provide aliases to be replaced before image lookup.
+For example, Strapi doesn't return the full image urls when using the default upload provider, but instead uses the format `/uploads/image-name`.
+
+You can use the `alias` option to make sure all image paths are parsed correctly:
+
+```js
+{
+  alias: {
+    '/uploads': 'http://localhost:1337/uploads'
+  }
+}
+
+```
+
 ## Development
 
 1. Clone this repository
@@ -74,17 +103,14 @@ yarn add nuxt-magpie # or npm install nuxt-magpie
 Copyright (c) Emilio Bondioli
 
 <!-- Badges -->
+
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-magpie/latest.svg
 [npm-version-href]: https://npmjs.com/package/nuxt-magpie
-
 [npm-downloads-src]: https://img.shields.io/npm/dt/nuxt-magpie.svg
 [npm-downloads-href]: https://npmjs.com/package/nuxt-magpie
-
 [github-actions-ci-src]: https://github.com/emiliobondioli/nuxt-magpie/workflows/ci/badge.svg
 [github-actions-ci-href]: https://github.com/emiliobondioli/nuxt-magpie/actions?query=workflow%3Aci
-
 [codecov-src]: https://img.shields.io/codecov/c/github/emiliobondioli/nuxt-magpie.svg
 [codecov-href]: https://codecov.io/gh/emiliobondioli/nuxt-magpie
-
 [license-src]: https://img.shields.io/npm/l/nuxt-magpie.svg
 [license-href]: https://npmjs.com/package/nuxt-magpie
