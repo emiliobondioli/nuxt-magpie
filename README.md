@@ -43,7 +43,8 @@ yarn add nuxt-magpie # or npm install nuxt-magpie
       extensions: ['jpg', 'jpeg', 'gif', 'png', 'webp'],
       baseUrl: '', // only download images from a certain url (e.g. your backend url)
       verbose: false, // show additional log info
-      concurrency: 10 // max concurrent image downloads
+      concurrency: 10 // max concurrent image downloads,
+      keepFolderStructure: false // re-creates original image paths when saving local copies
     }]
   ]
 }
