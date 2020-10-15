@@ -7,6 +7,6 @@ module.exports = {
   buildDir: resolve(__dirname, '.nuxt'),
   srcDir: __dirname,
   modules: [
-    { handler: require('../'), options: { baseUrl: '' } }
+    { handler: require('../'), options: { baseUrl: '', alias: { '/uploads': 'http://localhost:1337/uploads' } } }
   ]
 }

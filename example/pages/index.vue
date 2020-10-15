@@ -4,7 +4,7 @@
     <img src="https://nuxtjs.org/logos/nuxt-icon.png">
     <div v-for="project in projects" :key="project.id">
       {{ project.Title }}
-      <img :src="getCompleteUrl(project.Image[0].url)">
+      <img :src="getCompleteUrl(project.Image.url)">
     </div>
   </div>
 </template>
