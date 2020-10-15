@@ -68,8 +68,8 @@ All options and their default values:
   extensions: ['jpg', 'jpeg', 'gif', 'png', 'webp'],
   baseUrl: '', // only download images from a certain url (e.g. your backend url)
   verbose: false, // show additional log info
-  concurrency: 10 // max concurrent image downloads
-  keepFolderStructure: false // re-creates original image paths when saving local copies
+  concurrency: 10, // max concurrent image downloads
+  keepFolderStructure: false, // re-creates original image paths when saving local copies
   alias: {} // see options section for details
 }
 ```
@@ -83,6 +83,7 @@ You can use the `alias` option to make sure all image paths are parsed correctly
 
 ```js
 {
+  /* ... Magpie options */
   alias: {
     '/uploads': 'http://localhost:1337/uploads'
   }
