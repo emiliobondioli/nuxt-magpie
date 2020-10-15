@@ -6,5 +6,8 @@ module.exports = {
   },
   extends: [
     '@nuxtjs'
-  ]
+  ],
+  rules: {
+    'no-useless-escape': 'warn'
+  }
 }
