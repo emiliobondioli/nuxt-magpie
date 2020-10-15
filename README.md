@@ -70,7 +70,7 @@ All options and their default values:
   verbose: false, // show additional log info
   concurrency: 10, // max concurrent image downloads
   keepFolderStructure: false, // re-creates original image paths when saving local copies
-  alias: {} // see options section for details
+  alias: null // see below for details
 }
 ```
 
