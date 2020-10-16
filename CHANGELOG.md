@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://github.com/emiliobondioli/nuxt-magpie/compare/v0.0.11...v0.0.12) (2020-10-16)
+
+
+### Bug Fixes
+
+* correctly set alias default value and update docs ([ec46f77](https://github.com/emiliobondioli/nuxt-magpie/commit/ec46f7750a5329877c09c142090b129f4ee46a0f))
+* fetch image using http or https module based on url protocol ([537905b](https://github.com/emiliobondioli/nuxt-magpie/commit/537905b5f20085e835d196dbea3ddeb674bd0858))
+
 ### [0.0.11](https://github.com/emiliobondioli/nuxt-magpie/compare/v0.0.10...v0.0.11) (2020-10-15)
 
 
