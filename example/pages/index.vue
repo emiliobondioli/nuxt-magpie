@@ -19,7 +19,9 @@ export default {
     return await Promise.resolve('https://nuxtjs.org/logos/nuxt-icon.png')
   },
   asyncData () {
-    if (!TEST_LOCAL_API) { return {} }
+    if (!TEST_LOCAL_API) {
+      return {}
+    }
     return axios.get(`${API_URL}/projects`).then((r) => {
       return {
         projects: r.data
