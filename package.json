@@ -1,6 +1,6 @@
 {
   "name": "nuxt-magpie",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "During full static generation, download all remote images and add them to the dist folder, replacing file names in html and static payloads",
   "repository": "https://github.com/emiliobondioli/nuxt-magpie",
   "license": "MIT",
