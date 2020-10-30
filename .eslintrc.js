@@ -4,10 +4,9 @@ module.exports = {
     parser: 'babel-eslint',
     sourceType: 'module'
   },
-  extends: [
-    '@nuxtjs'
-  ],
+  extends: ['@nuxtjs'],
   rules: {
+    curly: 'off',
     'no-useless-escape': 'warn'
   }
 }
