@@ -21,6 +21,10 @@ Magpie aims to take Nuxt's [full static generation](https://nuxtjs.org/blog/goin
 - Use it with a locally hosted CMS to create a build ready to be deployed on static hosts (e.g. Netlify)
 - Requires `nuxt` version >= `2.14.0`
 
+## Before starting
+
+In its current version, even with full static generation enabled, nuxt still runs the `fetch` and `asyncData` calls when navigating to another route (as documented [here](https://nuxtjs.org/blog/going-full-static#current-issues)). To prevent these calls from overriding the urls replaced by magpie, you can add a check in your `fetch` or `asyncData` to bail fetching if the requested data is already available or `process.static` is `true`.
+
 ## Setup
 
 1. Add `nuxt-magpie` dependency to your project
