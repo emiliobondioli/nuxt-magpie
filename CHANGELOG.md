@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.14](https://github.com/emiliobondioli/nuxt-magpie/compare/v0.0.13...v0.0.14) (2020-11-03)
+
+
+### Features
+
+* ignore invalid urls ([84d9732](https://github.com/emiliobondioli/nuxt-magpie/commit/84d97322855efbada4d113fe3f5eda45b9ac89d5))
+
+
+### Bug Fixes
+
+* correctly replace image urls when keepFolderStructure: true - resolves [#3](https://github.com/emiliobondioli/nuxt-magpie/issues/3) ([d5d0161](https://github.com/emiliobondioli/nuxt-magpie/commit/d5d0161f372f02cd3bd7122fe455a36b8df53fa4))
+
 ### [0.0.13](https://github.com/emiliobondioli/nuxt-magpie/compare/v0.0.12...v0.0.13) (2020-10-30)
 
 
