@@ -23,7 +23,7 @@ Magpie aims to take Nuxt's [full static generation](https://nuxtjs.org/blog/goin
 
 ## Before starting
 
-In its current version, even with full static generation enabled, nuxt still runs the `fetch` and `asyncData` calls when navigating to another route (as documented [here](https://nuxtjs.org/blog/going-full-static#current-issues)). To prevent these calls from overriding the urls replaced by magpie, you can add a check in your `fetch` or `asyncData` to bail fetching if the requested data is already available or `process.static` is `true`.
+In its current version, even with full static generation enabled, nuxt still runs the `fetch` and `asyncData` calls when navigating to another route (as documented [here](https://nuxtjs.org/blog/going-full-static#current-issues)). To prevent these calls from overriding the urls replaced by magpie, you can add a check in your `fetch` or `asyncData` to bail fetching if the requested data is already available.
 
 ## Setup
 
