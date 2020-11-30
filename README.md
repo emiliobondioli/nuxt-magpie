@@ -74,6 +74,7 @@ All options and their default values:
   verbose: false, // show additional log info
   concurrency: 10, // max concurrent image downloads
   keepFolderStructure: false, // re-creates original image paths when saving local copies
+  replaceInChunks: true, // attempts to replace image urls in the generated javascript chunks
   alias: null // see below for details
 }
 ```
