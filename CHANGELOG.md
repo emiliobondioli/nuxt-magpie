@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.17](https://github.com/emiliobondioli/nuxt-magpie/compare/v0.0.15...v0.0.17) (2021-08-18)
+
+
+### Bug Fixes
+
+* ensure baseUrl has protocol to prevent invalid URL errors ([94cf793](https://github.com/emiliobondioli/nuxt-magpie/commit/94cf7938efaf893b523eeb85c4262a22898fef49))
+
 ### [0.0.15](https://github.com/emiliobondioli/nuxt-magpie/compare/v0.0.14...v0.0.15) (2021-01-10)
 
 
