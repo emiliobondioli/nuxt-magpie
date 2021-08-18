@@ -6,6 +6,16 @@ module.exports = {
   rootDir: resolve(__dirname, '..'),
   buildDir: resolve(__dirname, '.nuxt'),
   srcDir: __dirname,
+  head: {
+    title: 'Nuxt Magpie Test',
+    meta: [
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: 'https://nuxtjs.org/nuxt-card.png'
+      }
+    ]
+  },
   modules: [
     {
       handler: require('../'),
