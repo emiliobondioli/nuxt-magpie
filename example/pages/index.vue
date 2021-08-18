@@ -15,9 +15,6 @@ const TEST_LOCAL_API = false
 const API_URL = 'http://localhost:1337'
 
 export default {
-  async fetch () {
-    return await Promise.resolve('https://nuxtjs.org/logos/nuxt-icon.png')
-  },
   asyncData () {
     if (!TEST_LOCAL_API) {
       return {}
@@ -33,6 +30,20 @@ export default {
       projects: [],
       test: 1,
       url: 'https://nuxtjs.org/logos/nuxt-icon.png'
+    }
+  },
+  async fetch () {
+    return await Promise.resolve('https://nuxtjs.org/logos/nuxt-icon.png')
+  },
+  head () {
+    return {
+      meta: [
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'https://nuxtjs.org/logos/nuxt-icon-white.png'
+        }
+      ]
     }
   },
   methods: {
