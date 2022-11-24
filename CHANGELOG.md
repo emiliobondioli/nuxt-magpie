@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.18](https://github.com/emiliobondioli/nuxt-magpie/compare/v0.0.17...v0.0.18) (2022-11-24)
+
+
+### Bug Fixes
+
+* add missing dependency ([5353231](https://github.com/emiliobondioli/nuxt-magpie/commit/535323143b7f177c81b295d3c2d5b5617b2a188b))
+* update image matching regex to avoid false positives ([e5ea999](https://github.com/emiliobondioli/nuxt-magpie/commit/e5ea99971384353ec82056a691b4bc8244161a41))
+
 ### [0.0.17](https://github.com/emiliobondioli/nuxt-magpie/compare/v0.0.15...v0.0.17) (2021-08-18)
 
 
